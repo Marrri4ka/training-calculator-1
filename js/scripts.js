@@ -1,10 +1,36 @@
-$(document).ready(function() {
-$("form#add").submit(function(event) {
+$(document).ready(function(event) {
+$("#add").submit(function(event) {
+event.preventDefault();
 
-  
+
   var number1 = parseInt($("#add1").val());
   var number2 = parseInt($("#add2").val());
-  alert(number1 + number2);
+  $("p1").empty();
+$("p1").append(number1 + number2);
+});
+
+
+
+$("#multiply").click(function(event) {
+  event.preventDefault();
+
+
+  var number1 = parseInt($("#add1").val());
+  var number2 = parseInt($("#add2").val());
+  $("p1").empty();
+  $("p1").append(number1 * number2);
+});
+
+
+
+$("#divide").click(function(event) {
+  event.preventDefault();
+
+
+  var number1 = parseInt($("#add1").val());
+  var number2 = parseInt($("#add2").val());
+  $("p1").empty();
+  $("p1").append(number1 / number2);
 });
 });
 

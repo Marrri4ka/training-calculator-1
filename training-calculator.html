@@ -11,7 +11,9 @@
   <body>
       <div class = "container">
         <h1>Calculator</h1>
-        <form id="add">
+        <div class = "row">
+          <div class = "col-md-5">
+            <form id="add">
           <label for="add1">1st number:</label>
           <input id="add1" class="form-control" type="text">
 
@@ -19,11 +21,24 @@
 
           <label for="add2">2nd number:</label>
           <input id="add2" class="form-control" type="text">
-          <button id = "summit" type="submit" class="btn">Add!</button>
+          <button id = "add" type="submit" class="btn">Add!</button>
+          <button id = "multiply" type="submit" class="btn">Multiply!</button>
+          <button id = "divide" type="submit" class="btn">Divide!</button>
         </form>
+      </div>
 
+      <div class = "col-md-5">
+        <div class = "panel panel-danger">
+        <div class="panel-heading">
+        <p class="panel-title">Result</p>
+      </div>
+      <div class = "panel-body">
+        <p1></p1>
+      </div>
+    </div>
+        </div>
 
-
+      </div>
     </div>
   </body>
 </html>
